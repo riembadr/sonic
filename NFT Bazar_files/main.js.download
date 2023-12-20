@@ -1,0 +1,100 @@
+// document.body.style="background-color: var(--bs-dark);transition: 0.5s;"
+document.body.style="background-color: var(--bs-dark);"
+const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
+const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg";
+let span = document.querySelectorAll("span");
+let btn = document.querySelectorAll("button");
+let sora = document.getElementsByClassName("sora");
+let h1 = document.querySelectorAll("h1");
+let a = document.querySelectorAll("a");
+let nav = document.getElementsByClassName("navbar");
+let p = document.querySelectorAll("p");
+// let h3 = document.querySelectorAll("h3");
+let nav1 = document.getElementsByClassName("navbar");
+let shadow = document.getElementsByClassName("shadow");
+// error fe line 47,79
+
+
+var theme = "light";
+  const root = document.querySelector(":root");
+  const container = document.getElementsByClassName("theme-container")[0];
+  const themeIcon = document.getElementById("theme-icon");
+  container.addEventListener("click", setTheme);
+  function setTheme() {
+    switch (theme) {
+      case "dark":
+        setLight();
+        theme = "light";
+        break;
+      case "light":
+        setDark();
+        theme = "dark";
+        break;
+    }
+  }
+  function setLight() {
+    root.style.setProperty(
+      "--bs-dark",
+      "#F3FFFF"
+    );
+    container.classList.remove("shadow-dark");
+    setTimeout(() => {
+        container.classList.add("shadow-light");
+        themeIcon.classList.remove("change");
+      }, 300);
+      themeIcon.classList.add("change");
+      themeIcon.src = sun;
+      shadow[1].classList.replace("shadowdark1","shadowlight1");
+      shadow[0].classList.replace("shadowdark","shadowlight");
+      nav1[0].classList.replace("navbar5dark","navbar5");
+      // h3[0].classList.replace("fh3dark","fh3");
+      // p[1].classList.replace("fp1dark","fp1");
+      p[0].classList.replace("fpdark","fp");
+      btn[1].classList.replace("btn3dark","btn3");
+      a[4].classList.replace("nav-linkdr","nav-linkli");
+      a[3].classList.replace("nav-linkdr","nav-linkli");
+      a[2].classList.replace("nav-linkdr","nav-linkli");
+      a[1].classList.replace("nav-linkdr","nav-linkli");
+      a[0].classList.replace("logodark","logo");
+      nav[0].classList.replace("navbardark","navbarlight");
+      h1[0].classList.replace("fh1dark","fh1");
+      sora[0].classList.replace("soradark","soralight");
+      btn[2].classList.replace("btndark","btnlight");
+      btn[3].classList.replace("btn2dark","btn2light");
+      span[0].classList.replace("spandark","spanlight");
+      span[1].classList.replace("spandark","spanlight");
+      span[3].classList.replace("spandark","spanlight");
+
+  }
+  function setDark() {
+    root.style.setProperty("--bs-dark", "#111");
+    container.classList.remove("shadow-light");
+    setTimeout(() => {
+        container.classList.add("shadow-dark");
+        themeIcon.classList.remove("change");
+      }, 300);
+      themeIcon.classList.add("change");
+      themeIcon.src = moon;
+      shadow[1].classList.replace("shadowlight1","shadowdark1");
+
+      shadow[0].classList.replace("shadowlight","shadowdark");
+    nav1[0].classList.replace("navbar5","navbar5dark");
+    // h3[0].classList.replace("fh3","fh3dark");
+    // p[1].classList.replace("fp1","fp1dark");
+    p[0].classList.replace("fp","fpdark");
+    btn[1].classList.replace("btn3","btn3dark");
+    a[4].classList.replace("nav-linkli","nav-linkdr");
+    a[3].classList.replace("nav-linkli","nav-linkdr");
+    a[2].classList.replace("nav-linkli","nav-linkdr");
+    a[1].classList.replace("nav-linkli","nav-linkdr");
+    a[0].classList.replace("logo","logodark");
+    nav[0].classList.replace("navbarlight","navbardark");
+    h1[0].classList.replace("fh1","fh1dark");
+    sora[0].classList.replace("soralight","soradark");
+    btn[2].classList.replace("btnlight","btndark");
+    btn[3].classList.replace("btn2light","btn2dark");
+    span[0].classList.replace("spanlight","spandark");
+    span[1].classList.replace("spanlight","spandark");
+    span[3].classList.replace("spanlight","spandark"); 
+
+  }

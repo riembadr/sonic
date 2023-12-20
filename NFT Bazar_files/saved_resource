@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/webfonts/" />
+  <link href="https://fonts.cdnfonts.com/css/archivo" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/galano-grotesque-alt" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>NFT Bazar</title>
+</head>
+
+<body>
+  <div class="contaner">
+    <nav class="navbar navbar5 navbarlight navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">NFT <span class="spanlight">Bazar</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav aria-controls col-md-10 offset-md-auto k justify-content-center">
+            <li class="nav-item">
+              <a class="nav-linkli" aria-current="page" href="#">Marketplace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkli" href="#">NFT collectibles</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-linkli" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mining
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkli" href="#">Resources</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a><button type="button" class="btn btn3 btn2">Sign Up</button></a>
+            <a><button class="btn btnlight" type="button">login</button></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row row1">
+      <div class="col-md-4 col-sm-12 d-flex firstflex d1 animate__animated animate__fadeInLeft">
+        <div>
+          <h1 class="fh1">
+            Discover, <span class="s1">collect, and</span> sell
+            <span class="spanlight">NFTs</span>
+          </h1>
+        </div>
+        <div>
+          <p class="fp">
+            World’s fast growing NFTs bazar based on collectible NFTs.
+          </p>
+        </div>
+        <div><button class="btn2light">
+            View
+            <span class="s2">collection <i class="fa-solid fa-chevron-right"></i></span>
+          </button></div>
+
+
+      </div>
+      <!-- <div class="col-3"></div> -->
+      <div class="col-md-5 col-sm-12 soralight sora animate__animated animate__fadeInRight"></div>
+    </div>
+  </div>
+
+  <div class="shadowlight shadow"></div>
+  <div class="shadowlight1 shadow"></div>
+
+
+  <div class="theme-container shadow-light">
+    <img id="theme-icon" src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="ERR">
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
